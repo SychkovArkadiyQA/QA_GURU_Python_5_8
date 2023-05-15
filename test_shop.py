@@ -24,13 +24,14 @@ class TestProducts:
 
     def test_product_check_quantity(self, product):
         # TODO напишите проверки на метод check_quantity
-        def test_product_check_quantity(self, product):
-            assert product.check_quantity(999)
-        def test_product_check_quantity_full(self, product):
-            assert product.check_quantity(1000)
+        assert product.check_quantity(999)
 
-        def test_product_check_quantity_negative(self, product):
-            assert not product.check_quantity(1500)
+    def test_product_check_quantity(self, product):
+        assert product.check_quantity(999)
+
+    def test_product_check_quantity_full(self, product):
+        assert product.check_quantity(1000)
+
 
     def test_product_buy(self, product):
         # TODO напишите проверки на метод buy
