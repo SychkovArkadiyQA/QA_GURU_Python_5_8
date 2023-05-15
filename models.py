@@ -35,7 +35,7 @@ class Product:
         return hash(self.name + self.description)
 
 
-class Cart:
+class Cart():
     """
     Класс корзины. В нем хранятся продукты, которые пользователь хочет купить.
     TODO реализуйте все методы класса
@@ -71,7 +71,6 @@ class Cart:
 
     def clear(self):
         self.products.clear()
-
 
     def get_total_price(self) -> float:
         price = 0
